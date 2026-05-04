@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Login UI</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<div id="loginBox">
+<h2>Create Account</h2>
+<p class="sub">Register Here</p>
+<input type="email" id="loginEmail" placeholder="Email Address">
+<input type="password" id="loginPassword" placeholder="Password">
+<button onclick="login()">Login</button>
+<div class="switch">
+New User? <span onclick="showSignup()">Create Account</span>
+</div>
+</div>
+<div id="signupBox" class="hidden">
+<h2>Create Account</h2>
+<p class="sub">Join us today</p>
+<input type="text" id="signupName" placeholder="Full Name">
+<input type="email" id="signupEmail" placeholder="Email Address">
+<input type="password" id="signupPassword" placeholder="Password">
+<button onclick="signup()">Create Account</button>
+<div class="switch">
+Already have account? <span onclick="showLogin()">Login</span>
+</div>
+</div>
+<div class="message" id="msg"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
